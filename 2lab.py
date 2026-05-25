@@ -189,11 +189,11 @@ def main():
     """
     try:
         # Получение размеров матрицы
-        N, M = get_matrix_dimensions()
+        c, r = get_matrix_dimensions()
 
         # Автоматическая генерация матрицы (по требованию задания)
-        print(f"\nГенерируем матрицу размером {N}x{M} со случайными числами...")
-        matrix = generate_matrix(N, M)
+        print(f"\nГенерируем матрицу размером {c}x{r} со случайными числами...")
+        matrix = generate_matrix(c, r)
 
         # Вывод сгенерированной матрицы
         print("\nСгенерированная матрица:")
@@ -205,7 +205,7 @@ def main():
         print("\n1. Вычисляем сумму абсолютных значений для каждого столбца:")
         column_sums = calculate_column_absolute_sums(matrix)
         for j, sum_val in enumerate(column_sums):
-            abs_values = [abs(matrix[i, j]) for i in range(N)]
+            abs_values = [abs(matrix[i, j]) for i in range(c)]
             print(f"   Столбец {j + 1}: |{'| + |'.join(map(str, matrix[:, j]))}| = {sum_val}")
 
         # Нахождение столбца с максимальной суммой
