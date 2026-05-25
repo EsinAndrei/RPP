@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-def generate_matrix(rows, cols, min_val=-50, max_val=50):
+def generate_my_matrix(rows, cols, min_val=-50, max_val=50):
     """
     Генерация прямоугольной матрицы случайными целыми числами.
 
@@ -193,7 +193,7 @@ def main():
 
         # Автоматическая генерация матрицы (по требованию задания)
         print(f"\nГенерируем матрицу размером {c}x{r} со случайными числами...")
-        matrix = generate_matrix(c, r)
+        matrix = generate_my_matrix(c, r)
 
         # Вывод сгенерированной матрицы
         print("\nСгенерированная матрица:")
