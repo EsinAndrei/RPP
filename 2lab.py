@@ -229,8 +229,8 @@ def main():
         print_matrix_with_highlight(matrix, target_column, max_element_row)
 
         # Сохранение результатов в файл
-        filename = f"matrix_results.txt"
-        save_results_to_file(filename, matrix, column_sums, target_column, max_element, max_element_row)
+        nameOfFile = f"matrix_results.txt"
+        save_results_to_file(nameOfFile, matrix, column_sums, target_column, max_element, max_element_row)
 
         print("Программа успешно завершена!")
 
