@@ -168,7 +168,7 @@ def remove_longest_even_chain_with_standard(lst):
     # Этап 4: Удаляем цепочку (с использованием среза)
     del lst[start_to_remove:start_to_remove + max_length]
 
-def get_input_method():
+def get_method():
     """
     Выбор способа ввода списка
     """
@@ -196,7 +196,7 @@ def main():
 
     try:
         # Выбор способа ввода
-        method = get_input_method()
+        method = get_method()
 
         # Ввод списка
         if method == 'keyboard':
